@@ -1,0 +1,72 @@
+1. Problem Statement: 
+Design a program that will ask a user for their favorite football team, then output the users team logo onto the screen. 
+Your program should compare users input with NFL teams array and select the correct index and display the image.
+
+2. Nouns and Verbs
+Nouns: program, team, logo
+Verbs: ask, output, compare, select, display
+
+3. Defining Diagram
+INPUTS:
+      teamName
+PROCESSING:
+      Set teams array to all 32 NFL teams and their logos
+      Loop through team names and match user input using a FOR loop
+      Stop looping if user input equals teamsArray index
+      Display the correct logo for the team name onto screen
+OUTPUTS:
+      Display team logo onto screen
+
+4. Pseudocode
+DisplayTeamLogo
+  prompt for teamName with "What is your favorite NFL team? (Do Not Include City.)"
+  set teamsArray to all 32 nfl teams and their logos as objects
+
+  function insertImage
+    set img to html element
+    set src attributes
+    append image to html element
+  END function
+ 
+  FOR (stop at teamsArray length) 
+    IF teamsArray index equals teamName 
+      image equals teamsArray index.Image 
+      teamName equals teamsArray index.Name 
+      call insertImage function
+    ENDIF
+  ENDFOR 
+
+END
+
+5. Test Plans
+
+VARIABLES: teamName, teamsArray, img, image
+
+TEST CASE 1:
+  INPUT VALUES: packers
+
+  EXPECTED RESULT: Packers Logo show up on screen
+
+  ACTUAL RESULT: Packers Logo show up on screen
+
+TEST CASE 2:
+  INPUT VALUES: bRoNcOs
+
+  EXPECTED RESULT: Broncos logo appears on screen
+
+  ACTUAL RESULT: Broncos logo appears on screen
+
+TEST CASE 3:
+  INPUT VALUES: Football team
+
+  EXPECTED RESULT: Football Team logo appears on screen 
+
+  ACTUAL RESULT: Football Team logo appears on screen 
+
+TEST CASE 4:
+  INPUT VALUES: SAINTS
+
+  EXPECTED RESULT: Saints logo appears on screen
+
+  ACTUAL RESULT: Saints logo appears on screen
+
